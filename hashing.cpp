@@ -71,8 +71,7 @@ int Hash2(string word) {
         }
         n *= word[i];
         n *= multipliers[i];
-        n -= (i%2)*n; 
-        //changing it into n -= (i%2)*n*n; changes Hash1() collisions(!!!)
+        n -= (i%2)*n;
         temp += n;
     }
 
