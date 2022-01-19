@@ -6,7 +6,6 @@ using namespace std;
 #define NULLSTRING "0000000\0"
 
 void WordGenerator(string[], int);
-int keyFinder(string, string[]);
 
 void SeparateChainingInsert(string[], vector< vector<string> >&, vector< vector<string> >&);
 void DoubleHashingInsert(string[], vector<string>&, vector<string>&);
@@ -356,7 +355,6 @@ void CustomProbingSearch(string words[], vector<string>&cpTable1, vector<string>
 }
 
 //Deletion
-
 void SeparateChainingDelete(string word, vector< vector<string> >&separateChain1, vector< vector<string> >&separateChain2) {
     int hash, len; 
     
